@@ -1,0 +1,230 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #ececec;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* NAVBAR */
+.social-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.social-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-right: 25px;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.school-tag {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* OVERLAY MIGLIORATO */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.55) 50%,
+        rgba(0, 0, 0, 0.85) 100%
+    );
+    z-index: 1;
+}
+
+/* DISSOLVENZA TRA SEZIONI */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        #0d0d0d 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* TESTO LATERALE */
+.hero-text.side {
+    position: relative;
+    z-index: 3;
+    max-width: 600px;
+    margin-left: 10%;
+    padding: 20px;
+}
+
+.hero-text.side h1,
+.hero-text.side h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 7vw, 72px);
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-text.side p {
+    font-size: clamp(16px, 1.2vw, 20px);
+    margin-bottom: 35px;
+}
+
+.hero-text.side button {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-text.side button:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+/* TERZA SEZIONE */
+.hero-center-column {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 550px;
+    margin-left: 37.5%;
+    padding: 20px;
+    text-align: center;
+}
+
+.column-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 40px;
+}
+
+.vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stack-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.stack-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+}
+
+.stack-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.stack-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.stack-link {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .hero-center-column {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text.side,
+    .hero-center-column {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .school-tag {
+        display: none;
+    }
+
+    .social-container {
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+        font-size: 10px;
+    }
+}
