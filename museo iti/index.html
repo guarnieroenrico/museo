@@ -346,6 +346,7 @@
                 <div class="hidden md:flex items-center gap-8">
                     <a href="#progetti" class="nav-link text-sm tracking-wider">Progetti</a>
                     <a href="#info" class="nav-link text-sm tracking-wider">Informatica</a>
+                    <a href="#backstage" class="nav-link text-sm tracking-wider">Backstage</a>
                     <a href="#contatti" class="nav-link text-sm tracking-wider">Contatti</a>
                 </div>
                 <button id="menuBtn" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
@@ -362,6 +363,7 @@
             <div class="text-center space-y-8">
                 <a href="#progetti" class="block text-2xl font-display tracking-wide mobile-link">Progetti</a>
                 <a href="#info" class="block text-2xl font-display tracking-wide mobile-link">Informatica</a>
+                <a href="#backstage" class="block text-2xl font-display tracking-wide mobile-link">Backstage</a>
                 <a href="#contatti" class="block text-2xl font-display tracking-wide mobile-link">Contatti</a>
             </div>
         </div>
@@ -443,7 +445,7 @@
                     <div class="reveal flex flex-wrap gap-2" style="transition-delay: 0.1s;">
                         <button class="filter-btn active" data-filter="all">Tutti</button>
                         <button class="filter-btn" data-filter="web">Web</button>
-                        <button class="filter-btn" data-filter="app">App</button>
+                        <button class="filter-btn" data-filter="film">Film</button>
                         <button class="filter-btn" data-filter="game">Game</button>
                     </div>
                 </div>
@@ -658,6 +660,88 @@
             </div>
         </section>
 
+        <!-- Backstage Section -->
+        <section id="backstage" class="py-24 px-6 md:px-12 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="reveal text-center mb-16">
+                    <p class="text-[var(--accent)] text-sm tracking-widest uppercase mb-4">Dietro le Quinte</p>
+                    <h2 class="font-display text-4xl md:text-5xl font-light">Backstage</h2>
+                    <p class="text-[var(--fg-muted)] mt-4 max-w-xl mx-auto">Foto e video di alcuni dei nostri Open Day, orientamenti e momenti di lavoro in aula.</p>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-3 mb-12 reveal justify-center">
+                    <button class="bs-filter-btn filter-btn active" data-bs-filter="all">Tutti</button>
+                    <button class="bs-filter-btn filter-btn" data-bs-filter="foto">Foto</button>
+                    <button class="bs-filter-btn filter-btn" data-bs-filter="video">Video</button>
+                </div>
+
+                <!-- Masonry Grid -->
+                <div id="backstageGrid" class="projects-container">
+
+                    <!-- FOTO -->
+                    <div class="bs-item project-card reveal" data-bs-type="foto" style="cursor:default;">
+                        <div class="project-image">
+                            <img src="img-vid/backstage5.PNG" alt="Open Day 2025" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between mb-2 text-xs text-[var(--fg-muted)]"><span>2025</span><span class="category-badge" style="font-size:0.6rem;">foto</span></div>
+                            <h3 class="font-display text-lg">Open Day — Preparativi</h3>
+                            <p class="text-sm text-[var(--fg-muted)] mt-1">Allestimento delle postazioni per l'orientamento invernale.</p>
+                        </div>
+                    </div>
+
+                 
+                 
+
+                    <div class="bs-item project-card reveal" data-bs-type="foto" style="cursor:default; transition-delay:0.15s;">
+                        <div class="project-image">
+                            <img src="img-vid/backstage4.PNG" alt="Backstage museo" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between mb-2 text-xs text-[var(--fg-muted)]"><span>2025</span><span class="category-badge" style="font-size:0.6rem;">foto</span></div>
+                            <h3 class="font-display text-lg">Museo ITI — Blender</h3>
+                            <p class="text-sm text-[var(--fg-muted)] mt-1">Sviluppo della scena del museo  in Blender + bozza della pagina web.</p>
+                        </div>
+                    </div>
+
+                  
+                  
+
+                    <!-- VIDEO -->
+                    <div class="bs-item project-card reveal" data-bs-type="video" style="cursor:default; transition-delay:0.3s;">
+                        <div class="project-image">
+                            <video class="w-full h-auto object-cover" autoplay muted loop playsinline>
+                                <source src="img-vid/backstage1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between mb-2 text-xs text-[var(--fg-muted)]"><span>2025</span><span class="category-badge" style="font-size:0.6rem;">video</span></div>
+                            <h3 class="font-display text-lg">Test del ISISS LASER GAME — Video</h3>
+                            <p class="text-sm text-[var(--fg-muted)] mt-1">Ripresa durante giornata scolastica.</p>
+                        </div>
+                    </div>
+
+                    <div class="bs-item project-card reveal" data-bs-type="video" style="cursor:default; transition-delay:0.35s;">
+                        <div class="project-image">
+                            <video class="w-full h-auto object-cover" autoplay muted loop playsinline>
+                                <source src="img-vid/backstage3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between mb-2 text-xs text-[var(--fg-muted)]"><span>2025</span><span class="category-badge" style="font-size:0.6rem;">video</span></div>
+                            <h3 class="font-display text-lg">Esposizione Natività in realtà aumentata </h3>
+                            <p class="text-sm text-[var(--fg-muted)] mt-1">Ripresa durante l'esposizione delle Natività</p>
+                        </div>
+                    </div>
+
+                   
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contatti" class="py-24 px-6 md:px-12 relative z-10">
             <div class="max-w-7xl mx-auto">
@@ -676,7 +760,8 @@
                                 </svg>
                                 <div>
                                     <h4 class="font-medium">Indirizzo</h4>
-                                    <p class="text-[var(--fg-muted)]">Via Salvo D'acquisto, 123<br>81016 Piedimonte Matese (CE)</p>
+                                    <p class="text-[var(--fg-muted)]">Via Salvo D'acquisto, 123<br>81016 Piedimonte
+                                        Matese (CE)</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -748,7 +833,7 @@
                             <path
                                 d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                         </svg></a>
-                    
+
                 </div>
             </div>
         </footer>
@@ -773,11 +858,11 @@
         // Project Data
         const projects = [
             { id: 1, title: "Sito Web Napoli", category: "web", year: "2025", class: "4BI", description: "Progettazione completa del sito web Napoli con interfaccia moderna.", technologies: ["HTML", "CSS", "JS"], url: "https://guarnieroenrico.github.io/orientamento/orientamento/", image: "img-vid/museo.png" },
-            { id: 2, title: "Sito CAI", category: "web", year: "2024", class: "4BI", description: "Sito web per il CAI di Piedimonte Matese.", technologies: ["HTML", "CSS"], image: "img-vid/nseg.jpg",url: "https://guarnieroenrico.github.io/sito-cai/cai%20piedimonte%20matese/" },
-            { id: 3, title: "SUPERMAIO ITI", category: "web", year: "2026", class: "4BI", description: "Remaxe Di SuperMario versione ITI", technologies: ["JS", "CSS", "HTML"],image: "img-vid/image.png", url: "https://guarnieroenrico.github.io/SUPERMARIO/SUPERMARIO%20ITI/" },
+            { id: 2, title: "Sito CAI", category: "web", year: "2024", class: "4BI", description: "Sito web per il CAI di Piedimonte Matese.", technologies: ["HTML", "CSS"], image: "img-vid/nseg.jpg", url: "https://guarnieroenrico.github.io/sito-cai/cai%20piedimonte%20matese/" },
+            { id: 3, title: "SUPERMAIO ITI", category: "web", year: "2026", class: "4BI", description: "Remaxe Di SuperMario versione ITI", technologies: ["JS", "CSS", "HTML"], image: "img-vid/image.png", url: "https://guarnieroenrico.github.io/SUPERMARIO/SUPERMARIO%20ITI/" },
             { id: 4, title: "Museo ITI Blender", category: "architettura", year: "2025", class: "4BI", description: "Museo realizzato con Blender.", technologies: ["Blender", "3D"], image: "img-vid/Untitled6.png" },
-            { id: 5, title: "ISISS ARCADE", category: "game", year: "2024", class: "4BI", description: "Serie di giochi online.", technologies: ["JS", "Canvas"],image: "img-vid/arcade.png", url: "https://isissmatese.com/arcade/" },
-            { id: 6, title: "IN OGNI UNIVERSO", category: "app", year: "2025", class: "4BI", description: "MINI FILM FANTASY SULL'ISISS MATESE", technologies: ["Blender", "HTML", "JASCRIPT" , "CSS" , "CAPCUT"], video: "img-vid/0324.mp4" },
+            { id: 5, title: "ISISS ARCADE", category: "game", year: "2024", class: "4BI", description: "Serie di giochi online.", technologies: ["JS", "Canvas"], image: "img-vid/arcade.png", url: "https://isissmatese.com/arcade/" },
+            { id: 6, title: "IN OGNI UNIVERSO", category: "Film", year: "2025", class: "4BI", description: "MINI FILM FANTASY SULL'ISISS MATESE", technologies: ["Blender", "HTML", "JASCRIPT", "CSS", "CAPCUT"], video: "img-vid/0324.mp4" },
             { id: 7, title: "ISISS LASER GAME", category: "game", year: "2024", class: "4BI", description: "Gioco in VR.", technologies: ["Unity", "VR"], video: "img-vid/opendayy.mp4", image: "img-vid/Screenshot 2026-02-24 214607.png" }
         ];
 
@@ -902,6 +987,22 @@
         function createParticles() { particles = []; for (let i = 0; i < 40; i++) particles.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, r: Math.random() * 1.5, vx: (Math.random() - 0.5) * 0.2, vy: (Math.random() - 0.5) * 0.2, o: Math.random() * 0.3 }); }
         function animate() { ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > canvas.width) p.vx *= -1; if (p.y < 0 || p.y > canvas.height) p.vy *= -1; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fillStyle = `rgba(212, 165, 116, ${p.o})`; ctx.fill(); }); requestAnimationFrame(animate); }
         resizeCanvas(); createParticles(); animate(); window.addEventListener('resize', () => { resizeCanvas(); createParticles(); });
+
+        // Backstage Filter
+        document.querySelectorAll('.bs-filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.bs-filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.bsFilter;
+                document.querySelectorAll('.bs-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.bsType === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
 
         // Init
         renderProjects();
